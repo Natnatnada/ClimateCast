@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
+body {
+  color: #008080;
+  background-color: #e9fdf9;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+main {
+  margin: auto;
+  color: #e9fdf9;
+  background-color: #008080;
+  width: 150vh;
+}
