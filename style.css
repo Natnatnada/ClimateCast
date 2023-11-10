@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:ital,opsz,wght@1,6..12,300&display=swap');
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0;
 }
 body {
-  color: #008080;
+  color: #036d6d;
   background-color: #e9fdf9;
   /* display: flex; */
   justify-content: center;
   align-items: center;
 }
-main {
-  margin: auto;
+.principal-section {
+  margin: 30px 0 auto;
   color: #e9fdf9;
   background-color: #008080;
   width: 150vh;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #63bfcb;
+  border-radius: 10px;
+  font-family: 'Noto Sans', sans-serif;;
+}
+.h1{
+  font-family: 'Nunito Sans', sans-serif;;
 }
