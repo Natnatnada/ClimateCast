@@ -10,7 +10,10 @@
   </head>
   <body>
     <main class="principal-section">
+      <div class="title-container">
       <h1 class="h1">Welcome to ClimateCast, where are you today? </h1>
+      <div id="icon">🌤️</div>
+    </div>
       <header>
         <form class="form" id="searchForm">
           <input
@@ -32,9 +35,12 @@
         <div class="weather-section">
           <div>
             <h1 class="city-name-city" id="city"></h1>
-            <p class="city-name-details">fecha
-              <br>
-              Windy
+            <p class="weather-app-details">
+              <span id="date">fsdfds</span>,
+              <span id="description">fsdf</span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
@@ -53,7 +59,7 @@
             on GitHub</a
           >
           and
-          <a href="#" target="_blank">hosted on Netlify</a>
+          <a href="https://climecast.netlify.app/" target="_blank">hosted on Netlify</a>
         </p>
       </footer>
       <script src="index.js"></script>
