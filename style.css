@@ -17,12 +17,12 @@ body {
   margin: 45px auto;
   padding: 30px;
   color: #e9fdf9;
-  background: rgba( 0, 0, 0, 0.4 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 9.5px );
-  -webkit-backdrop-filter: blur( 9.5px );
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
   border-radius: 10px;
-border: 3px solid rgba(15, 4, 4, 0.18);
+  border: 3px solid rgba(15, 4, 4, 0.18);
   font-family: "Noto Sans", sans-serif;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ border: 3px solid rgba(15, 4, 4, 0.18);
 }
 .submit-btn {
   padding: 20px;
-  width: 15%;
+  width: 10%;
   background-color: #e9fdf9;
   padding: 15px 30px;
   border: none;
@@ -76,19 +76,19 @@ a {
 .section {
   padding: 30px 0;
 }
-.condition, .daytime {
+.condition,
+.daytime {
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 .city-name-city {
-
   margin: 0;
   font-size: 38px;
   line-height: 48px;
 }
-.city-info{
-padding-top: 20px;
+.city-info {
+  padding-top: 20px;
 }
 .city-name-details {
   font-size: 16px;
@@ -114,19 +114,44 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-.condition-daily{
+.condition-daily {
   display: flex;
   justify-content: space-between;
   width: 80%;
-
 }
 .title-container {
   display: flex;
   justify-content: space-between;
   width: 90%;
 }
-.weather-forecast{
+.weather-forecast-day{
+  background: rgba(184, 179, 179, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  padding: 30px;
+}
+.weather-forecast {
+  margin: 20px 0  20px 0;
   display: flex;
-justify-content: space-between;
-width: 80%;
+  justify-content: space-between;
+  width: 80%;
+}
+.weather-forecast-date{
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.weather-forecast-temperatures {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.weather-forecast-icon {
+  width: 50px;
+  height: 50px;
 }
