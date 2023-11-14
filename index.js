@@ -17,6 +17,7 @@ function updateWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   climateElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
+//format the date to page
 function formatDate(date) {
     let minutes = date.getMinutes();
     let hours = date.getHours();

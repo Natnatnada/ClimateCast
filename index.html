@@ -24,7 +24,7 @@
         <h1 class="h1">Welcome to ClimateCast, where are you today?</h1>
         <div id="icon"></div>
       </div>
-      <header>
+      <header class="search-bar">
         <form class="form" id="searchForm">
           <input
             type="search"
@@ -39,22 +39,18 @@
             value="search"
             class="submit-btn"
           />
+
+          <!-- <button> <i class="fa-solid fa-location-dot"></i></button> -->
         </form>
       </header>
       <section>
         <div class="weather-section">
-          <div>
+          <div class="city-info">
             <h1 class="city-name-city" id="city"></h1>
             <p class="weather-app-details">
-              <span id="date">fsdfds</span>,
-              <span id="description">fsdf</span>
+              <span id="date" class="daytime">fsdfds</span>,
+              <span id="description" class="condition">fsdf</span>
               <br />
-            </p>
-            <p>
-              Humidity: <i class="fa-solid fa-water"> </i
-              > <strong id="humidity"> </strong>, Wind:
-              <i class="fa-solid fa-wind"></i>
-              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
@@ -63,7 +59,33 @@
           </div>
         </div>
       </section>
-
+      <section>
+        <div class="condition-daily">
+          <p>
+            Humidity: <i class="fa-solid fa-water"> </i>
+            <strong id="humidity"> </strong>
+          </p>
+          <p>
+            Wind:
+            <i class="fa-solid fa-wind"></i>
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+      </section>
+      <section class="forecast">
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer>
         <p>
           This project was coded by
