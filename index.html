@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>ClimateCast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a97c10e133.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="principal-section">
+      <div class="title-container">
+        <h1 class="h1">Welcome to ClimateCast, where are you today?</h1>
+        <div id="icon"></div>
+      </div>
+      <header class="search-bar">
+        <form class="form" id="searchForm">
+          <input
+            type="search"
+            id="inputSearch"
+            placeholder="Tell me a city"
+            required
+            class="input-search"
+          />
+          <input
+            type="submit"
+            id="inputSubmit"
+            value="search"
+            class="submit-btn"
+          />
+
+          <!-- <button> <i class="fa-solid fa-location-dot"></i></button> -->
+        </form>
+      </header>
+      <section>
+        <div class="weather-section">
+          <div class="city-info">
+            <h1 class="city-name-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="date" class="daytime">fsdfds</span>,
+              <span id="description" class="condition">fsdf</span>
+              <br />
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="condition-daily">
+          <p>
+            Humidity: <i class="fa-solid fa-water"> </i>
+            <strong id="humidity"> </strong>
+          </p>
+          <p>
+            Wind:
+            <i class="fa-solid fa-wind"></i>
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+      </section>
+      <section class="forecast">
+        <div class="weather-forecast" id="forecast"> 
+        </div>
+      </section>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Natnatnada" target="_blank">Nat</a> and is
+          <a href="https://github.com/Natnatnada/ClimateCast" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="https://climecast.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
